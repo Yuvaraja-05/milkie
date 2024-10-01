@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md fix position-fixed top-0 " style="background-color: white;">
+            
+        <h1> <a href="#" class="navbar-brand fs-1 fst-italic ">MILKIE</a></h1>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+              </button>
+
+          <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#about">About</a>
+                    </li>
+              </ul>
+                   
+          </div>
+      
+    </nav>
+    <br><br><br><br><br><br>
+    <div class="buttermilk d-flex" style="justify-content:center;">
+        <div class="card " style="width: 350px;">
+            <img src="{% static 'images/buttermilk.png' %}" alt="" class="card-img-top" style="width: 349px;">
+        <div class="card-body">
+            <h2 class="card-title">BUTTERMILK</h2>
+            Click Below For Check The Price:<span class="card-text" id="base"></span><br> <br>
+            <button id="one" class="btn btn-success">250ml</button>  <button id="two" class="btn btn-success">500ml</button>  <button id="three" class="btn btn-success">1000ml</button>  <button id="four" class="btn btn-success">2000ml</button>
+            <br><br>
+            <a href="{% url "final" %}" ><button class="btn btn-info">BUY</button></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static "js/buttermilk.js" %}"></script>
+{% endblock  %}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+  
+  
+</head>
+<body>
+    
+    {% block content %}
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md fix position-fixed top-0 " style="background-color: white;">
+            
+            <h1> <a href="#" class="navbar-brand fs-1 fst-italic ">MILKIE</a></h1>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+                  </button>
+
+              <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="#about">About</a>
+                        </li>
+                  </ul>
+                       
+              </div>
+          
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <form action="{% url "initiate_payment" %}" method="post" class="form" >
+        {% csrf_token %}
+<table>
+    <tr>
+        <td><label for="">Name:</label><br><br></td>
+        <td><input type="text" name="name"><br><br></td> 
+    </tr>
+    
+    <tr>
+       <td><label for="">Product:</label><br><br></td>
+        <td><input type="radio" name="product" value="Milk">Milk
+            <input type="radio" name="product" value="Curd">Curd
+            <input type="radio" name="product" value="Butter">Butter
+            <input type="radio" name="product" value="Condensedmilk">Condensedmilk <br>
+            <input type="radio" name="product" value="Buttermilk">Buttermilk
+            <input type="radio" name="product" value="Ghee">Ghee
+            <input type="radio" name="product" value="Cheese">Cheese
+            <input type="radio" name="product" value="yogurt">Yogurt<br><br> 
+        </td>
+    </tr>
+    <tr>
+        <td><label for="">Quantity:</label><br><br></td>
+        <td>  <input type="radio" name="quantity" value="250ml/mg">250ml/mg
+            <input type="radio" name="quantity" value="500ml/mg">500ml/mg<br>
+            <input type="radio" name="quantity" value="1000ml/mg">1000ml/mg
+            <input type="radio" name="quantity" value="2000ml/mg">2000ml/mg<br><br> 
+        </td>
+    </tr>
+    <tr>
+        <td>  <label for="">Address:</label> <br><br></td>
+        <td><input type="text" name="address"><br><br></td>
+    </tr>
+    <tr>
+        <td>  <label for="">Phone:</label><br><br></td>
+        <td><input type="text" name="phone"><br><br></td>
+    </tr>
+    <tr>
+        <td> <label for="">Email:</label> <br><br> </td>
+        <td><input type="email" name="email"><br><br></td>
+    </tr>
+    <tr>
+        <td> <label for="">Amount:</label> <br><br></td>
+        <td><input type="number" name="amount"></td>
+    </tr>
+
+</table>
+<button type="submit" class="button">Submit</button>
+    </form>
+</center>
+    {% endblock %}
+
+
+</body>
+</html>

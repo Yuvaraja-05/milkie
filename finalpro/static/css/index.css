@@ -1,0 +1,169 @@
+.image{
+    background: url(../images/Milkie.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+   
+  } 
+
+.fix{
+    width: 95%;
+    z-index: 1;
+
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.product1{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   border-radius: 50px;
+   border: 3px solid green;
+   
+}
+.product2{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.product3{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product3.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.product4{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product4.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.product5{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product5.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.product6{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product6.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.product7{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product7.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.product8{
+    width: 300px;
+    height: 600px;
+    background: url(../images/product8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 3px solid green;
+}
+.btn1{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 30px;
+    position: relative;
+    top: 450px;
+    left: 108px;
+    
+    
+    
+}
+.end{
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    color:green;
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.end1,.end2,.end3{
+    margin-top: 70px;
+    font-size:large;
+}
+.form{
+   
+    background-color: rgb(255, 255, 255);
+    color: green;
+   
+    
+   
+    
+}
+label{
+    font-size: x-large;
+  margin-right:30px ;  
+}
+input{
+   padding: 10px;
+}
+.button{
+    color:white;
+    background-color:green;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.log{
+   position: relative;
+   top: 200px;
+   left: 670px;
+}
+.logpage{
+    position: relative;
+   top: 220px;
+   left: 670px; 
+  
+}
+.sign{
+    position: relative;
+    top: 150px;
+    left: 670px;
+}
+.signpage{
+    position: relative;
+    top: 170px;
+    left: 570px; 
+}
